@@ -23,11 +23,13 @@ Data to power ML systems usually comes from different sources.  Sources can be c
 
   -  Less likely to be malformed than user data. 
   - **Because debugging ML systems is hard, it is a common practice to log everything you can.**
-  - The sheer amount of system-generated data has two challenges: getting signal from the noise and how to store a large number of logs. 
+  - The sheer amount of system-generated data has two challenges: getting signal from the noise and how to store a large number of logs. People can store them in low-access storage that costs much less than higher-frequency-access storage.
 
-- **Internal databases:** these are the databases used by your software services to run your business.
+- **Internal databases:** these are the databases used by your software services to run your business. e.g., inventory, when users search Ramen on Walmart, system needs to check internal database to see if they are available or not.
 
-- **Second-party data:** data that other company collects on their customers that is made available to you.
+- **First-party data:** First-party data is the data that your company already collects about your users or customers.
+
+- **Second-party data:** data that other company collects on their customers that is made available to you. Often, you have to pay for it.
 
 - **Third-party data:** data collected by companies on the public who aren't their customers. For example, apps that track all behaviour on the phone, even if they haven't opened an account.
   
